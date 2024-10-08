@@ -30,7 +30,7 @@ body, html {
 
 .intro {
     padding: 20px;
-    color:white
+    color:white;
 }
 .Augsburg {
     width: 100px;
@@ -107,7 +107,7 @@ p {
     line-height: 1.7;
     margin-bottom: 20px;
     font-size: 16px;
-    color: #555; /* Softer text color for better readability */
+    /*color: #555;  Softer text color for better readability */
 }
 
 /* Styling for individual sections */
@@ -116,7 +116,7 @@ p {
     border: 1px solid #ddd; /* Lighter borders for a cleaner look */
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 10px; /* Softer, rounded corners */
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
@@ -133,6 +133,7 @@ p {
     height: auto;
     display: block;
     margin: 20px auto; /* Centering the image */
+    float:left;
 }
 
 /* Improved technical skills section */
