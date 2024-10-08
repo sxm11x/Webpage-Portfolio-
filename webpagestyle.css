@@ -12,6 +12,7 @@ body, html {
     display: flex;
     flex-direction: row;
     height: 100vh; /* Full height of the viewport */
+
 }
 
 .left-section {
@@ -22,12 +23,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 .intro {
     padding: 20px;
+    color:white
 }
 .Augsburg {
     width: 100px;
@@ -42,21 +44,25 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* General settings for the right section */
 .right-section {
     flex: 2;
-    background-color: rgb(255, 255, 255);
+    background-color: #f9f9f9; /* Lighter background for better contrast */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 40px;
     overflow-y: auto;
+    border-left: 1px solid #ddd; /* Subtle border on the left for cleaner separation */
 }
 
+/* Navigation improvements */
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 nav ul li {
@@ -64,56 +70,87 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: #333;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s; /* Smooth transition effect */
 }
 
 nav ul li a:hover {
-    color: #555;
-}
-
-h2 {
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #333;
-}
-
-p {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.experience-item {
-    margin-bottom: 30px;
-}
-
-.technical-skills {
-    margin-top: 30px;
-}
-
-
-/* Apply borders to individual sections */
-.right-section h2 {
-    border-bottom: 2px solid #1a1919; /* Adds a bottom border to section headings */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* For the content under each heading */
-.experience-item, .technical-skills, .about-me {
-    border: 2px solid #333; /* Adds a border around each content block */
-    padding:20px;
-    margin-bottom: 30px;
-    border-radius: 8px; /* adds rounded corners to the border */
+    color: #3770ac; /* Modern blue color for hover */
 }
 
 nav {
-    border: 2px solid #333;
-    padding: 10px;
+    border: 1px solid #ddd; /* Subtle border around navigation */
+    padding: 10px 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 10px; /* Softer corners */
+    background-color: #fff; /* White background for a modern feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styles for a modern, clean look */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000; /* Accent underline for headings */
+    padding-bottom: 10px;
+}
+
+/* General paragraph styling */
+p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555; /* Softer text color for better readability */
+}
+
+/* Styling for individual sections */
+.experience-item, .technical-skills, .about-me {
+    background-color: white;
+    border: 1px solid #ddd; /* Lighter borders for a cleaner look */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px; /* Softer, rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add interactivity with hover effect */
+.experience-item:hover, .technical-skills:hover, .about-me:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Specific styling for the Augsburg image */
+.Augsburg {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centering the image */
+}
+
+/* Improved technical skills section */
+.technical-skills p {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.technical-skills strong {
+    color: #395471; /* Blue color for emphasis */
+}
+
+/* Additional improvements to right section */
+.right-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000; /* Accent color underline for headings */
+    padding-bottom: 10px;
 }
