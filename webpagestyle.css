@@ -17,7 +17,7 @@ body, html {
 
 .left-section {
     flex: 1;
-    background-image: url('IMG_9628.jpg'); /* The image for the left side */
+    background-image: url('frequency-wave-7776034_1280.jpg'); /* The image for the left side */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -25,6 +25,7 @@ body, html {
     justify-content: center;
     color: rgb(255, 255, 255);
     text-align: center;
+    
 }
 
 .intro {
