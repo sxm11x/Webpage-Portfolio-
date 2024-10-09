@@ -156,3 +156,43 @@ p {
     border-bottom: 2px solid #000000; /* Accent color underline for headings */
     padding-bottom: 10px;
 }
+
+/*Form CSS*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Allow height to adapt to content */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Full width on smaller screens */
+        border-left: none; /* Remove left border on smaller screens */
+    }
+
+    .profile-pic {
+        width: 150px; /* Adjust profile picture size */
+        height: 150px;
+    }
+
+    .right-section {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Reset margin */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
